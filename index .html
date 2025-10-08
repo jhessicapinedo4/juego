@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de la serpiente</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <!-- Modal de instrucciones -->
+    <div id="instructions-modal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <div class="instructions">
+          <h2>¡Bienvenido al juego, Jer!</h2>
+          <p>
+            He aquí el juego, un poco básico pero la intención es lo que cuenta creo yo:)
+          </p>
+          <h3>Cómo jugar:</h3>
+          <ul>
+            <li>
+              Usa las teclas <span class="key">↑</span>
+              <span class="key">↓</span> <span class="key">←</span>
+              <span class="key">→</span> para controlar la serpiente.
+            </li>
+            <li>
+              Recoge las estrellas <span class="star-icon">★</span> para crecer
+              y sumar puntos.
+            </li>
+            <li>Evita chocar contra las paredes o contra tu propia cola.</li>
+            <li>
+              La velocidad ira aumentando cada 50 puntos. Alcanza el maximo
+              puntaje que puedassss
+            </li>
+          </ul>
+          <p>Haz clic en el botón "Iniciar" para comenzar</p>
+          <div class="footer">
+            Espero que te diviertas y te guste c: !
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="game-container">
+      <canvas id="game-canvas" width="500" height="500"></canvas>
+      <div id="game-over" class="game-over">¡GAME OVER!</div>
+      <div id="score-container">Puntuación: <span id="score">0</span></div>
+      <div id="controls">
+        <button id="start-btn">Iniciar</button>
+        <button id="restart-btn">Reiniciar</button>
+        <button id="instructions-btn">Instrucciones</button>
+      </div>
+    </div>
+
+    <div id="secret-message-modal" class="modal">
+      <div class="modal-content secret-modal-content">
+        <button class="close-btn secret-close-btn">&times;</button>
+        <div class="secret-message">
+          <h2>¡Bien, lo lograste!</h2>
+          <p>
+            Bien, felicidades Jer!
+          </p>
+          <p>Gracias</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+   
+  </body>
+</html>
